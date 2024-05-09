@@ -3,28 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-
     <h1>Stax Food Admin Login</h1>
 
     <div class="auth">
       <div class="auth_box">
-        <h4 class="auth_title">Please fill in your unique admin login details below</h4>
+        <h4 class="auth_title">
+          Please fill in your unique admin login details below
+        </h4>
 
         <form class="auth__form">
           <label for="email">Email address</label>
           <input type="email" name="email" id="email" />
 
           <label for="Password">Password</label>
-          <input type="password" name="password" id="password" class="active"/>
+          <input type="password" id="password" class="active" />
+          <i class="bi bi-eye-slash" id="togglePassword"> </i>
 
-            <a href="">forgot password?</a>
-          <button>Sign In</button>
+          
+          <a href="">forgot password?</a>
+          <button class="btn">Sign In</button>
         </form>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
